@@ -1,0 +1,38 @@
+{
+	"name": "boilerplate",
+	"version": "1.0.0",
+	"description": "My Boilerplate",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack --watch",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Brian",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^9.6.1",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^8.0.5",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"cssnano": "^4.1.10",
+		"gulp": "^4.0.2",
+		"gulp-declare": "^0.3.0",
+		"gulp-minify-css": "^1.2.4",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^8.0.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-wrap": "^0.15.0",
+		"live-server": "^1.2.1",
+		"webpack": "^4.39.3",
+		"webpack-cli": "^3.3.7",
+		"webpack-stream": "^5.2.1"
+	},
+	"dependencies": {
+		"react": "^16.9.0",
+		"react-dom": "^16.9.0",
+		"react-router-dom": "^5.0.1"
+	}
+}

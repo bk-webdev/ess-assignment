@@ -1,0 +1,19 @@
+/* Global Reset */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/* Base Settings */
+body {
+	padding: 5rem;
+	box-sizing: border-box;
+	font: 1.4rem 'Lucida Grande', Helvetica, Arial, sans-serif;
+}

@@ -1,0 +1,145 @@
+.container {
+	padding: 5rem;
+	font: 1.4rem 'Lucida Grande', Helvetica, Arial, sans-serif;
+	background-color: #b2d8b2;
+	width: 80%;
+	height: 80vmin;
+	overflow: scroll;
+	border: solid 0.1rem black;
+	margin: 3rem;
+
+	&__content {
+		min-height: 55rem;
+		width: 100%;
+		max-width: 98rem;
+		margin: 0 auto;
+		position: relative;
+		border: 0px solid #333;
+		font-family: Open Sans, Helvetica, sans-serif;
+		padding: 0;
+
+		&-title {
+			background-color: #fff;
+			width: 100%;
+			position: relative;
+			height: 3.6rem;
+			font-size: 1.8rem;
+			font-weight: bold;
+			color: #333;
+			padding: 0.6rem;
+			margin-bottom: 3rem;
+		}
+
+		&-dropdown {
+			position: absolute;
+			right: 3rem;
+			top: 0.3rem;
+			display: inline-block;
+
+			&-content {
+				display: none;
+				position: absolute;
+				background-color: #f1f1f1;
+				min-width: 20rem;
+				box-shadow: 0rem 0.8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
+				border-radius: 0.6rem;
+				z-index: 1;
+			}
+
+			&-content a {
+				color: #333;
+				padding: 1.2rem 1.4rem;
+				text-decoration: none;
+				display: block;
+				font-size: 1.2rem;
+				line-height: 120%;
+				font-weight: 400;
+			}
+
+			&:hover &-content {
+				display: block;
+			}
+		}
+
+		&-dropbtn {
+			background-image: url(https://ess-ops-lms.s3.amazonaws.com/lms/rul/amhc/images/resourse_btn_bkg.jpg);
+			background-repeat: repeat-x;
+			color: #fff;
+			padding: 0.3rem 3rem;
+			font-size: 1.6rem;
+			border: 0.1rem #665 solid;
+			border-radius: 0.6rem;
+		}
+
+		&-header {
+			text-align: center;
+			color: #333333;
+			font-size: 1.8rem;
+			line-height: 5rem;
+			margin-bottom: 5rem;
+		}
+
+		&-boxes {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			&-btn {
+				&:link,
+				&:visited {
+					background-color: #669543;
+					border-radius: 0.6rem;
+					border: 0.1rem solid #333333;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+					color: #ffffff;
+					font-family: Open Sans, Helvetica, sans serif;
+					font-size: 1.8rem;
+					line-height: 120%;
+					font-weight: bold;
+					padding: 1.7rem;
+					text-decoration: none;
+					text-align: center;
+					width: 13rem;
+					margin: 2rem;
+					height: 10rem;
+				}
+			}
+		}
+
+		&-item a {
+			color: #7dad41;
+			font-weight: 700;
+			line-height: 150%;
+			margin-bottom: 1.2rem;
+		}
+	}
+}
+
+#second {
+	display: none;
+}
+
+.expired {
+	display: none;
+}
+
+.expired:target {
+	display: block;
+	padding: 10px 80px 15px;
+	color: #333333;
+	font-size: 18px;
+	line-height: 160%;
+}
+
+.close a {
+	color: #7dad41;
+	font-weight: 700;
+	clear: both;
+}
+
+#close:target {
+	display: none;
+}
